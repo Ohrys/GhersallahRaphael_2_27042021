@@ -1,0 +1,6 @@
+########################
+# Git Ignore du P2
+########################
+
+# Les références et sources utilisés pour le projet
+ref/
