@@ -4,11 +4,22 @@
  */
 
 /*---- GLOBAL ---- */
+a{
+    text-decoration: none;
+}
 
+body{
+    font-family: "Raleway", sans-serif;
+}
 
 /*---- HEADER ---- */
 
 /*---- CONTENT ---- */
+
+i.greystar{
+    color:gray;
+}
+
 
 /*---- FOOTER ---- */
 
