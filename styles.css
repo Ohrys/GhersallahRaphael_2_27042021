@@ -121,7 +121,7 @@ section#research form input{
 }
 
 
-section form input[type="submit"]{
+section#research form input[type="submit"]{
     background-color: #0065FC;
     border-top:1px solid #0065FC;
     border-bottom:1px solid #0065FC;
@@ -130,7 +130,72 @@ section form input[type="submit"]{
     border-bottom-right-radius: 15px;
 }
 
+section#filter{
+    margin-left: 3%;
+}
 
+section#filter h1{
+    font-size:1em;
+    margin-top: 40px;
+    float:left;
+
+}
+
+section#filter ul{
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+section#filter ul li a{
+    border: 2px solid #F2F2F2;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:30px;
+    margin:20px;
+    font-weight: bold;
+    padding-right: 21px;
+    color:black;
+}
+
+section#filter li a:hover{
+    background-color: #deebff;
+
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+section#filter ul li i{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065FC;
+    margin-right:13px;
+}
+
+section#filter p{
+    clear:both;
+    margin-bottom:40px;
+    font-size: 12px;
+}
+
+section#filter p i{
+    border-radius: 50%;
+    border : 1px solid #F2F2F2;
+    color:#0065FC;
+    padding:5px 8px;
+    margin-right:5px;
+}
 
 
 /*---- FOOTER ---- */
