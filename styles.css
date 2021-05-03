@@ -1,25 +1,88 @@
 /*
  * CSS de index.html 
  * 
+ *
+ * Charte couleur : 
+ *      - gris : #F2F2F2
+ *      - bleu : #0065FC
+ *      - bleu clair : #DEEBFF
  */
 
 /*---- GLOBAL ---- */
+
+*{
+    margin:0;
+    padding:0;
+}
+
 a{
     text-decoration: none;
 }
 
+
 body{
+    width:100%;
     font-family: "Raleway", sans-serif;
 }
 
 /*---- HEADER ---- */
 
-/*---- CONTENT ---- */
-
-i.greystar{
-    color:gray;
+header{
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    display:flex;
+    align-content: stretch;
 }
 
+header div{
+    margin-top: 3vw;
+    align-self: flex-end;
+    flex:6;
+}
+header div img{
+    width:100px;
+}
+
+header nav{
+    flex:2;
+}
+header nav ul{
+    display:flex;
+    align-self: flex-start;
+    justify-content: space-around;
+    list-style: none;
+}
+header nav ul li{
+    border-top:2px solid transparent;
+    padding:38px;
+}
+header nav ul li:hover{
+    border-top:2px solid #0065FC;
+}
+header nav ul li a:hover{
+    color:#0065FC;
+}
+
+header p{
+    flex:1;
+    text-align: center;
+    padding-top: 38px;
+    margin : 0;
+}
+header p a{
+    font-weight: bold;
+    color:#0065FC;
+}
+
+/*---- CONTENT ---- */
+
+article i.fas-star{
+    color: #0065FC
+}
+
+article i.greystar{
+    color:#F2F2F2;
+}
 
 /*---- FOOTER ---- */
 
