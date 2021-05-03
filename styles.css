@@ -84,6 +84,55 @@ article i.greystar{
     color:#F2F2F2;
 }
 
+section#research{
+    margin-left: 3vw;
+}
+
+section#research p{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+section#research form{
+    display:flex;
+    justify-content: flex-start;
+}
+section#research form label{
+    display:flex;
+    border:1px solid #F2F2F2;
+    width:50px;
+    height:48px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+section#research form input{
+    height: 50px;
+    border:none;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2;
+    font-weight: bold;
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+
+section form input[type="submit"]{
+    background-color: #0065FC;
+    border-top:1px solid #0065FC;
+    border-bottom:1px solid #0065FC;
+    color:white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
 /*---- FOOTER ---- */
 
 /*----- MEDIA QUERIES ----- */
