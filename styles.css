@@ -17,6 +17,7 @@
 
 a{
     text-decoration: none;
+    color:black;
 }
 
 
@@ -28,7 +29,6 @@ body{
 /*---- HEADER ---- */
 
 header{
-    margin-left: 3vw;
     margin-bottom: 3vw;
     display:flex;
     align-content: stretch;
@@ -36,6 +36,7 @@ header{
 
 header div{
     margin-top: 3vw;
+    margin-left:3vw;
     align-self: flex-end;
     flex:6;
 }
@@ -43,18 +44,15 @@ header div img{
     width:100px;
 }
 
-header nav{
-    flex:2;
-}
 header nav ul{
-    display:flex;
     align-self: flex-start;
+    display:flex;
     justify-content: space-around;
     list-style: none;
 }
 header nav ul li{
     border-top:2px solid transparent;
-    padding:38px;
+    padding: 38px;
 }
 header nav ul li:hover{
     border-top:2px solid #0065FC;
@@ -66,8 +64,7 @@ header nav ul li a:hover{
 header p{
     flex:1;
     text-align: center;
-    padding-top: 38px;
-    margin : 0;
+    padding-top: 40px;
 }
 header p a{
     font-weight: bold;
@@ -80,6 +77,7 @@ header p a{
 
 section#research{
     margin-left: 3vw;
+    margin-bottom: 1vw;
 }
 
 section#research h1{
@@ -89,29 +87,29 @@ section#research h1{
 }
 
 section#research p{
-    margin-top:15px;
-    margin-bottom:15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 section#research form{
     display:flex;
     justify-content: flex-start;
+    max-width: 10px;
 }
 section#research form label{
     display:flex;
     border:1px solid #F2F2F2;
-    width:50px;
-    height:48px;
+    padding:1vw;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 section#research form input{
-    height: 50px;
+    padding:1vw;
     border:none;
     border-top:1px solid #F2F2F2;
     border-bottom:1px solid #F2F2F2;
@@ -119,7 +117,6 @@ section#research form input{
     padding-left:15px;
     padding-right: 15px;
 }
-
 
 section#research form input[type="submit"]{
     background-color: #0065FC;
@@ -131,35 +128,46 @@ section#research form input[type="submit"]{
 }
 
 section#filter{
-    margin-left: 3%;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    height:3vw;
+    display:flex;
+    align-items: baseline;
+    flex-flow:row wrap;
+    align-content: space-between;
 }
 
 section#filter h1{
     font-size:1em;
-    margin-top: 40px;
-    float:left;
-
+    margin-right: 1vw;
 }
 
 section#filter ul{
+    flex-basis : 50%;
     display:flex;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
 }
 
-section#filter ul li a{
-    border: 2px solid #F2F2F2;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius:30px;
-    margin:20px;
+section#filter ul li{
+    border:2px solid #F2F2F2;
+    border-radius: 50px;
+    font-size: 1em;
     font-weight: bold;
-    padding-right: 21px;
-    color:black;
+    padding-right:20px;
 }
 
-section#filter li a:hover{
+section#filter ul li i{
+    color:#0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    padding:20px;
+    margin-right:20px;
+}
+
+section#filter li:hover{
     background-color: #deebff;
 
     -webkit-transform: scale(1.05);
@@ -169,70 +177,73 @@ section#filter li a:hover{
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-}
+}    
 
-section#filter ul li i{
-    width:50px;
-    height:50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #deebff;
-    color: #0065FC;
-    margin-right:13px;
-}
+
 
 section#filter p{
-    clear:both;
-    margin-bottom:40px;
-    font-size: 12px;
+    margin-top:1vw;
+    flex-basis:100%;
+    font-size: 1em;
 }
 
 section#filter p i{
-    border-radius: 50%;
+    border-radius: 50px;
     border : 1px solid #F2F2F2;
     color:#0065FC;
     padding:5px 8px;
     margin-right:5px;
 }
 
+/*Correction de cette partie car trop confuse */
+
 main{
     display:flex;
+    padding:3vw;
     justify-content: space-between;
     align-items: stretch;
-    margin: 0 3%;
+    margin-bottom: 3vw;
 }
 
-main section#accommodation{
+main h1{
+  font-size: 1.5em;
+  margin:1.5vw 3vw;
+}
+
+main article i{
+    font-size: 0.8vw;
+    margin-top: 0;
+}
+
+main article i.fa-star:not(.greystar){
+    color: #0065FC;
+}
+
+main article i.greystar{
+    color:#F2F2F2;
+}
+
+main section#accommodation,
+main aside#popular{
     background-color: #F2F2F2;
     border-radius: 25px;
-    margin-top: 2%;
-    width:67%;
-}
+    width:65%;
+    padding:2vw 1vw;
 
-main section#accommodation h1{
-  font-size: 1.7vmax;
-  margin: 3.3vw 0 1.2vw 2.8vw;
-}
-
-main section#accommodation>div{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-main section#accommodation div article{
-    width:16.5vw;
-    height:13vw;
-    background-color: white;
+main div article{
+    flex-basis:30%;
     border-radius: 25px;
-    padding: 0.35em;
-    margin: 10px 0 25px 0;
-    box-shadow: 4px 2px 20px #c9c9c9;
+    background-color: white;
+    box-shadow: 4px 2px 20px #C9C9C9;
+    margin:0.5vw;
+    padding: 0.3vw;
 }
 
-main section#accommodation div article:hover{
+main div article:hover{
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
@@ -242,116 +253,90 @@ main section#accommodation div article:hover{
     transition: 0.4s;
 }
 
-main section#accommodation div article img{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width:100%;
-    height:59%;
-    object-fit: cover;
+main  article>a>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5vw 1vw;
 }
 
-main section#accommodation div article h2 {
-  font-size: 1.3vw;
-  margin-left: 10px;
-  margin-top: 2px;
+main  article>a h2{
+    font-size: 1.4em;
 }
 
-main section#accommodation div article p {
-    font-size: 1vw;
-    margin: 2px 0 10px 10px;
-}
-
-main section#accommodation div article p em {
+main article p em{
     font-style:normal;
     font-weight: bold;
 }
 
-main section#accommodation div article a, main aside#popular div article a {
-  text-decoration: none;
-  color: black;
+main section#accommodation>div,
+main aside#popular>div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
-main section#accommodation p a{
-  font-weight: bold;
-  font-size: 1.2vmax;
-  margin-left: 2.8vw;
-  color:black;
+main section#accommodation div article>a{
+    display:flex;
+    flex-direction: column;
 }
 
-article i{
-    font-size: 0.8vw;
-    margin-left: 10px;
-    margin-top: 0;
+main section#accommodation div article>a img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width:100%;
+    height:20vh;
 }
 
-article i.fa-star:not(.greystar){
-    color: #0065FC;
-}
-
-article i.greystar{
-    color:#F2F2F2;
+main section#accommodation>p{
+    margin: 2vw 1vw;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:black;
 }
 
 main aside#popular{
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    width: 31%;
-    margin-top: 2%;
-    padding-bottom: 20px;
-    position: relative;
+    width: 30%;
+    align-items: stretch;
 }
 
-main aside#popular h1{
-    font-size: 1.7vmax;
-    margin: 3.3vw 0 1.2vw;
+main aside#popular>h1{
+    margin-left:0;
+    width:100%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 main aside#popular>div{
-    display: flex;
+    width:100%;
+    display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-main aside#popular div article{
-    display: inline-block;
-    padding: 0.35em;
-    width: 23vw;
-    height: 9.5vw;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 4px 2px 20px #c9c9c9;
+main aside#popular div article>a{
+    display:flex;
+    flex-direction: row;
 }
 
-main aside#popular div article:hover{
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+main aside#popular div article>a img {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+    width:40%;
+    height:9.5vw;
 }
 
-main aside#popular div article img{
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  width: 40%;
-  height: 100%;
-  object-fit: cover;
-  float: left;
-  padding-right: 10px;
-  margin-right: 0.8vw;
+main aside#popular div article>a>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-main aside#popular div article div i{
-  margin-top: 3vw;
-  font-size: 0.8vw;
-  margin-left: 10px;
-}
+
+
 /*---- FOOTER ---- */
 
 /*----- MEDIA QUERIES ----- */
