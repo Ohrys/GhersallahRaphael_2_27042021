@@ -6,6 +6,13 @@
  *      - gris : #F2F2F2
  *      - bleu : #0065FC
  *      - bleu clair : #DEEBFF
+ *
+ * Charte taille texte : 
+ *      - Gros titre : 1.5vw
+ *      - Titre article : 1.2vw
+ *      - Titre section : 1.1vw
+ *      - texte : 1vw
+ *      - petit texte : 0.8vw
  */
 
 /*---- GLOBAL ---- */
@@ -32,19 +39,21 @@ header{
     margin-bottom: 3vw;
     display:flex;
     align-content: stretch;
+    font-size: 1.1vw;
 }
 
 header div{
     margin-top: 3vw;
     margin-left:3vw;
     align-self: flex-end;
-    flex:6;
+    flex-basis:60%;
 }
 header div img{
     width:100px;
 }
 
 header nav ul{
+    flex-basis: 30%;
     align-self: flex-start;
     display:flex;
     justify-content: space-around;
@@ -62,7 +71,7 @@ header nav ul li a:hover{
 }
 
 header p{
-    flex:1;
+    flex-basis:10%;
     text-align: center;
     padding-top: 40px;
 }
@@ -82,7 +91,7 @@ section#research{
 
 section#research h1{
     color:black;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -98,14 +107,13 @@ section#research form{
 }
 section#research form label{
     display:flex;
-    border:1px solid #F2F2F2;
     padding:1vw;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.1vw;
 }
 
 section#research form input{
@@ -120,8 +128,6 @@ section#research form input{
 
 section#research form input[type="submit"]{
     background-color: #0065FC;
-    border-top:1px solid #0065FC;
-    border-bottom:1px solid #0065FC;
     color:white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -138,12 +144,12 @@ section#filter{
 }
 
 section#filter h1{
-    font-size:1em;
+    font-size:1.1vw;
     margin-right: 1vw;
 }
 
 section#filter ul{
-    flex-basis : 50%;
+    flex-basis : 60%;
     display:flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -154,7 +160,7 @@ section#filter ul{
 section#filter ul li{
     border:2px solid #F2F2F2;
     border-radius: 50px;
-    font-size: 1em;
+    font-size: 1.1vw;
     font-weight: bold;
     padding-right:20px;
 }
@@ -163,19 +169,13 @@ section#filter ul li i{
     color:#0065FC;
     background-color: #DEEBFF;
     border-radius: 50px;
-    padding:20px;
+    padding:25px;
     margin-right:20px;
 }
 
 section#filter li:hover{
     background-color: #deebff;
-
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
-
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
 }    
 
@@ -184,7 +184,7 @@ section#filter li:hover{
 section#filter p{
     margin-top:1vw;
     flex-basis:100%;
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 section#filter p i{
@@ -195,7 +195,7 @@ section#filter p i{
     margin-right:5px;
 }
 
-/*Correction de cette partie car trop confuse */
+/*--- PARTIE MAIN ---*/
 
 main{
     display:flex;
@@ -206,7 +206,7 @@ main{
 }
 
 main h1{
-  font-size: 1.5em;
+  font-size: 1.2vw;
   margin:1.5vw 3vw;
 }
 
@@ -244,12 +244,7 @@ main div article{
 }
 
 main div article:hover{
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
-
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -261,7 +256,11 @@ main  article>a>div{
 }
 
 main  article>a h2{
-    font-size: 1.4em;
+    font-size: 1.1vw;
+}
+
+main article p{
+    font-size:1vw;
 }
 
 main article p em{
@@ -293,7 +292,7 @@ main section#accommodation div article>a img {
 main section#accommodation>p{
     margin: 2vw 1vw;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2vw;
     color:black;
 }
 
@@ -335,8 +334,107 @@ main aside#popular div article>a>div {
     justify-content: space-around;
 }
 
+/*--- PARTIE ACTIVITÉ*/
+
+section#activity{
+    padding-left:3vw;
+    padding-right:3vw;
+    padding-bottom: 3vw;
+}
+
+section#activity>div{
+    margin-top:1vw;
+    width:100%;
+    height:35vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section#activity img{
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+    width:100%;
+    height:85%;
+}
+
+
+section#activity figcaption{
+    font-size: 1.1vw;
+    font-weight: bold;
+    padding:0.3vw 1vw;
+}
+section#activity>div>figure figcaption{
+    padding:1vw;
+}
+
+
+section#activity figure{
+    box-shadow: 4px 2px 20px #C9C9C9;
+    border-radius: 25px;
+    
+}
+section#activity figure:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+section#activity>div>figure{
+    width:20%;
+    height:35vw;
+}
+section#activity>div>figure>a>img{
+    width:100%;
+    height:90%;
+}
+
+section#activity div>div{
+    width:20%;
+}
+
+section#activity div>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ section#activity div>div:first-of-type figure:first-of-type{
+    height:18vw;
+    
+}
+section#activity div>div figure:first-of-type{
+    margin-bottom: 1vw;
+}
+
+
+
 
 
 /*---- FOOTER ---- */
+footer{
+    background-color:#F2F2F2;
+    display:flex;
+    flex-direction: row;
+    padding: 3vw;
+}
+
+footer div{
+    margin-right: 20%;
+}
+
+footer div h2{
+    font-size:1.2vw;
+    margin-bottom: 1vw;
+}
+
+footer div ul{
+    font-size: 1vw;
+    list-style: none;
+}
+
+footer div ul li{
+    margin-bottom: 1vw;
+}
 
 /*----- MEDIA QUERIES ----- */
