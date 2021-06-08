@@ -7,12 +7,6 @@
  *      - bleu : #0065FC
  *      - bleu clair : #DEEBFF
  *
- * Charte taille texte : 
- *      - Gros titre : 1.5vw
- *      - Titre article : 1.2vw
- *      - Titre section : 1.1vw
- *      - texte : 1vw
- *      - petit texte : 0.8vw
  */
 
 /*---- GLOBAL ---- */
@@ -34,7 +28,7 @@ body{
 /*---- HEADER ---- */
 
 header{
-    margin-bottom: 3vw; /* taille à conserver*/
+    margin-bottom: 3vw; 
     display:flex;
     justify-content: space-between;
     font-size: 1.3em;
@@ -401,6 +395,7 @@ section#activity>div article{
     background-color:#F2F2F2;
     border-radius: 25px;
     box-shadow: 4px 2px 20px #C9C9C9;
+    overflow: hidden;
 }
 
 section#activity>div article:hover{
@@ -414,6 +409,9 @@ section#activity>div article h2{
     padding-left: 1vw;
     padding-top:3%;
     font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 section#activity>div>article,
