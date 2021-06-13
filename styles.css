@@ -260,7 +260,7 @@ main section#accommodation>div,
 main aside#popular>div{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-around;
 }
 
@@ -286,9 +286,9 @@ main article p em{
 
 
 main section#accommodation{
-    padding:2vw;
     box-sizing: border-box;
-    width:65%;
+    padding:1vw;
+    width:63%;
 }
 
 main section#accommodation div article{
@@ -319,8 +319,8 @@ main section#accommodation>p{
 
 main aside#popular{
     box-sizing: border-box;
-    padding:1vw;
     width: 34%;
+    padding:1vw;
     align-items: stretch;
 }
 
@@ -417,7 +417,7 @@ section#activity>div article h2{
 section#activity>div>article,
 section#activity>div>div {
     position:sticky;
-    width:24%;
+    width:22%;
     height:40vw;
 }
 
@@ -441,12 +441,12 @@ section#activity>div>div {
 }
 
 section#activity>div>div:first-of-type article:first-of-type{
-    height:53%;
+    height:48%;
     margin-bottom: auto;
 }
 
 section#activity>div>div:first-of-type article:first-of-type h2{
-    padding-top: 6%;
+    padding-top: 8%;
 }
 
 section#activity>div>div:first-of-type article:last-of-type{
@@ -455,12 +455,12 @@ section#activity>div>div:first-of-type article:last-of-type{
 
 
 section#activity>div>div:last-of-type article:first-of-type{
-    height:50%;
+    height:45%;
     margin-bottom: auto;
 }
 
 section#activity>div>div:first-of-type article:first-of-type h2{
-    padding-top: 5%;
+    padding-top: 7%;
 }
 
 section#activity>div>div:last-of-type article:last-of-type{
